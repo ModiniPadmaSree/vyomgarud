@@ -1,0 +1,71 @@
+/* src/sections/Highlights.module.css (Updated for Angular Focus) */
+
+.section {
+  background-color: #000; /* Pure black */
+  padding: 6rem 1.5rem;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* ... (header, subTitle, mainTitle styles remain similar) ... */
+
+/* -------------------- RESPONSIVE FEATURES GRID -------------------- */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem; 
+}
+
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.featureItem {
+  padding: 2.5rem 1.5rem;
+  text-align: center;
+  transition: all 0.3s ease;
+  border-radius: 0; /* Sharper edges */
+  background-color: #111; 
+  border-bottom: 3px solid #333; /* Strong base border */
+  opacity: 0; 
+}
+
+.featureItem:hover {
+  background-color: #1a1a1a;
+  border-bottom-color: var(--color-orange); /* Highlight border on hover */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5); 
+}
+
+.iconWrapper {
+  font-size: 2.5rem;
+  color: var(--color-orange);
+  margin-bottom: 1rem;
+  width: 4rem;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%;
+  background-color: #000;
+  border: 2px solid var(--color-orange);
+  box-shadow: 0 0 15px rgba(255, 123, 0, 0.5); /* Stronger glow */
+}
+
+.title {
+  font-size: 1.4rem;
+  font-weight: 900;
+  color: var(--color-white);
+  margin-bottom: 0.5rem;
+}
+
+.description {
+  color: #aaaaaa;
+  font-size: 0.95rem;
+}

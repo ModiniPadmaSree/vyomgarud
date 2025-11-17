@@ -1,0 +1,47 @@
+/* src/components/Card.module.css (Updated for Data Block Look) */
+
+.card {
+  /* Dark Aesthetic */
+  background-color: #111; /* Very dark background */
+  padding: 2rem;
+  border-radius: 0; /* Removing rounded corners for sharper, military look */
+  /* Key styling: Light inner border */
+  border: 1px solid #333; 
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.05); /* Subtle white inner glow */
+  text-align: left;
+  
+  /* Subtle Animation / Transition */
+  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transform: translateY(0);
+  opacity: 0; 
+}
+
+.card:hover {
+  /* High-Impact Hover Effect */
+  transform: translateY(-5px); 
+  /* Strong border and outer glow */
+  border-color: var(--color-orange);
+  background-color: #1a1a1a;
+  box-shadow: 0 5px 30px rgba(255, 123, 0, 0.5); 
+}
+
+.icon {
+  font-size: 3.5rem; /* Larger icon for impact */
+  color: var(--color-orange);
+  margin-bottom: 1rem;
+  text-shadow: 0 0 15px rgba(255, 123, 0, 0.9); /* Intense icon glow */
+}
+
+.title {
+  font-size: 1.75rem; 
+  font-weight: 900; /* Ultra bold */
+  color: var(--color-white);
+  margin-bottom: 0.5rem;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: -0.03em;
+}
+
+.description {
+  color: #aaaaaa;
+  line-height: 1.6;
+}
